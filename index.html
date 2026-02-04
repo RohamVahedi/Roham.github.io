@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="personal3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="https://github.com/RohamVahedi/Roham.github.io.git">
+    <title>Personal ||| Roham</title>
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">Roham Vahedi</div>
+        <div class="menu" id="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-btn" onclick="toggleMenu()">=</div>
+        </header>
+
+        <section class="hero" id="home">
+            <img src="img.jpg" alt="photo" class="profile-img">
+            <h1>Hello, I'm Roham</h1>
+            <p>A web developer focused on clean design, modern layouuts, and creating website
+                that stay timeless.
+            </p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </section>
+
+        <section id="aboutt">
+            <h2>About Me</h2>
+            <div class="about">
+                <p>I work with HTNL, CSS and javaScript, building responsive and elegant
+                    website that look great on all devices.
+                </p>
+                <p>MY goal is to crrate projects that are not only founctional
+                    but also visually and long-lasting.
+                </p>
+            </div>
+        </section>
+        
+         <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-box">HTML5</div>
+                <div class="skill-box">CSS3</div>
+                <div class="skill-box">responsive design</div>
+                <div class="skill-box">javaScript</div>
+            </div>
+         </section>
+         
+         <section id="content">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Massage"></textarea>
+                <button type="submit">Send Massages</button>
+            </form>
+         </section>
+
+
+
+         <script>
+            function toggleMenu() {
+                 document.getElementById("menu").classList.toggle("active");
+            }
+            window,onscroll = function () {
+                const btn = document.getElementById("topBtn")
+                btn.style.display = window.scrollY > 300 ? "block" : "none";
+            }
+
+            function scrollToTop() {
+                window.scrollTo({  top: 0, behavior: "smooth"});
+            }
+         </script>
+</body>
+</html>
